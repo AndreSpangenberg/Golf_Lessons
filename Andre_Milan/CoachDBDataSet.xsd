@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CoachDBDataSet" targetNamespace="http://tempuri.org/CoachDBDataSet.xsd" xmlns:mstns="http://tempuri.org/CoachDBDataSet.xsd" xmlns="http://tempuri.org/CoachDBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CoachDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CoachDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Andre_Milan.Properties.Settings.GlobalReference.Default.CoachDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblCoachTableAdapter" GeneratorDataComponentClassName="tblCoachTableAdapter" Name="tblCoach" UserDataComponentName="tblCoachTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CoachDBConnectionString (Settings)" DbObjectName="dbo.tblCoach" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Spesialize FROM dbo.tblCoach</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Spesialize" DataSetColumn="Spesialize" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CoachDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CoachDBDataSet" msprop:Generator_UserDSName="CoachDBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblCoach" msprop:Generator_TableClassName="tblCoachDataTable" msprop:Generator_TableVarName="tabletblCoach" msprop:Generator_TablePropName="tblCoach" msprop:Generator_RowDeletingName="tblCoachRowDeleting" msprop:Generator_RowChangingName="tblCoachRowChanging" msprop:Generator_RowEvHandlerName="tblCoachRowChangeEventHandler" msprop:Generator_RowDeletedName="tblCoachRowDeleted" msprop:Generator_UserTableName="tblCoach" msprop:Generator_RowChangedName="tblCoachRowChanged" msprop:Generator_RowEvArgName="tblCoachRowChangeEvent" msprop:Generator_RowClassName="tblCoachRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Spesialize" msprop:Generator_ColumnVarNameInTable="columnSpesialize" msprop:Generator_ColumnPropNameInRow="Spesialize" msprop:Generator_ColumnPropNameInTable="SpesializeColumn" msprop:Generator_UserColumnName="Spesialize" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
